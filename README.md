@@ -10,7 +10,7 @@ https://github.com/free5ty1e/primestationone/blob/master/splashscreen.png
 ## BASIC USAGE
 Install RetroPie (https://github.com/petrockblog/RetroPie-Setup) either via writing an SD card image downloaded from their site or building from sources (recommended, but this takes 24-36 hours!).  Once you can type 'emulationstation' from the command line and get into the basic EmulationStation interface and see one or two entries, you can continue with the PrimeStation One overlay scripts.
 
-Clone the github repo for the primeStationOne to your Pi home folder and start the setup.
+Clone the github repo for the primeStationOne to your Pi home folder and start the setup. (git pull is included in case you want to copy / paste the entire block below and paste into an SSH terminal window, to update if you've already cloned)
 ```
         cd ~
         git clone https://github.com/free5ty1e/primestationone.git
