@@ -3,10 +3,10 @@
 cd ~/primestationone
 sudo chmod +x bin/*
 sudo chmod +x RetroPie/roms/settings/*.sh
-sudo cp bin/* /usr/bin/
-sudo cp -r etc /
-sudo cp -r opt /
-cp -r RetroPie/* ~/RetroPie/
-cp -r .emulationstation/* ~/.emulationstation/
-cp .bashrc ~/
+sudo cp -v bin/* /usr/bin/
+sudo cp -vr etc /
+sudo cp -vr opt /
+cp -vr RetroPie/* ~/RetroPie/
+cp -vr .emulationstation/* ~/.emulationstation/
+cp -v .bashrc ~/
 cd ~
