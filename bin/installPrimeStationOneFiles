@@ -8,3 +8,4 @@ sudo cp -r etc /
 sudo cp -r opt /
 cp -r RetroPie/* ~/RetroPie/
 cp -r .emulationstation/* ~/.emulationstation/
+cp .bashrc ~/
