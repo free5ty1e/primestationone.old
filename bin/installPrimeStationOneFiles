@@ -1,5 +1,5 @@
 #!/bin/bash
-PSOFOLDER="~/primestationone"
+PSOFOLDER="/home/pi/primestationone"
 
 sudo chmod +x "$PSOFOLDER/bin/*"
 sudo chmod +x "$PSOFOLDER/RetroPie/roms/settings/*.sh"
