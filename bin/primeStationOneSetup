@@ -6,7 +6,7 @@ function pause()
 }
 
 echo PrimeStationOne Setup script - to be run on the PI after copying the PrimeStationOne files on top of a functional RetroPie image.
-echo Run the primeStationOneCopyFilesToPi script first from the installing computer after setting up an SSH key for passwordless SCP transfers... (or just clone the github repo directly onto the Pi, easier)
+echo Run the primeStationOneCopyFilesToPi script first from the installing computer after setting up an SSH key for passwordless SCP transfers... or just clone the github repo directly onto the Pi, easier...
 
 echo =====================> Making sure things are up to date...
 sudo apt-get -y update
