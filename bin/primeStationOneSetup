@@ -36,6 +36,9 @@ mplayerConfigForPi
 echo =====================> Installing system status page auto updater cronjob...
 installCronUpdateForSysStatusHomepage
 
+echo =====================> Installing PrimeStation One onReboot autoupdater cronjob...
+installCronRebootAutoQuickUpdatePrimeStationOne
+
 echo =====================> Building hello_pi example and utility projects
 pushd /opt/vc/src/hello_pi
 sudo ./rebuild.sh
