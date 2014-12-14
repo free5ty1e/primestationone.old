@@ -1,3 +1,3 @@
 #!/bin/bash
-fbi ~/splashscreen.png
+splashscreenQuickReference.sh
 
