@@ -1,4 +1,4 @@
 #!/bin/bash
-cd ~
+cd ~/primestationone
 git pull
 bin/primeStationOneSetup
