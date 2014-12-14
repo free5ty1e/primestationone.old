@@ -2,6 +2,7 @@
 
 cd ~/primestationone
 sudo chmod +x bin/*
+sudo chmod +x RetroPie/roms/settings/*.sh
 sudo cp bin/* /usr/bin/
 sudo cp -r etc /
 sudo cp -r opt /
