@@ -6,7 +6,7 @@ function pause()
 }
 
 echo PrimeStationOne Setup script - to be run on the PI after copying the PrimeStationOne files on top of a functional RetroPie image.
-echo Run the primeStationOneCopyFilesToPi script first from the installing computer after setting up an SSH key for passwordless SCP transfers...
+echo Run the primeStationOneCopyFilesToPi script first from the installing computer after setting up an SSH key for passwordless SCP transfers... (or just clone the github repo directly onto the Pi, easier)
 
 echo =====================> Making sure things are up to date...
 sudo apt-get -y update
@@ -23,7 +23,7 @@ echo =====================> Obtaining all packages / dependencies in required or
 sudo apt-get install -y libboost-system-dev libboost-filesystem-dev libboost-date-time-dev libfreeimage-dev libfreetype6-dev libeigen3-dev libcurl4-openssl-dev libasound2-dev cmake g++-4.7 libboost-locale-dev
 
 echo =====================> Obtaining all packages / dependencies in required order to ensure things build correctly, stage 3 of 3...
-sudo apt-get install -y build-essential automake git dialog libtool bison flex xutils-dev libcairo2-dev libffi-dev libmtdev-dev libjpeg-dev libudev-dev libxcb-xfixes0-dev libxcursor-dev libraspberrypi-dev libxkbcommon-dev libxcb-composite0-dev libpam-dev libbluetooth3 bluez bluez-utils bluez-compat bluez-hcidump bluetooth udev  python-qt4-dev pyqt4-dev-tools qt4-designer libjack-dev wicd-curses libusb-dev libbluetooth-dev joystick speedometer nload vim transmission php5 libapache2-mod-php5 zenmap chromium-bsu ruby gparted cowsay assaultcube-data chromium ttf-mscorefonts-installer netcat filezilla curl tor lynx checkinstall bc alsa-utils mplayer
+sudo apt-get install -y build-essential automake git dialog libtool bison flex xutils-dev libcairo2-dev libffi-dev libmtdev-dev libjpeg-dev libudev-dev libxcb-xfixes0-dev libxcursor-dev libraspberrypi-dev libxkbcommon-dev libxcb-composite0-dev libpam-dev libbluetooth3 bluez bluez-utils bluez-compat bluez-hcidump bluetooth udev  python-qt4-dev pyqt4-dev-tools qt4-designer libjack-dev wicd-curses libusb-dev libbluetooth-dev joystick speedometer nload vim transmission php5 libapache2-mod-php5 zenmap chromium-bsu ruby gparted cowsay assaultcube-data chromium ttf-mscorefonts-installer netcat filezilla curl tor lynx checkinstall bc alsa-utils mplayer fbi
 
 echo =====================> Launching mplayer config 4 pi script...
 mplayerConfigForPi
@@ -31,7 +31,7 @@ mplayerConfigForPi
 cowsay -f vader Installing PrimeStationOne...
 
 echo =====================> Beginning install process of custom stuffs and installation of scripts and executables to their correct locations
-~/bin/installPrimeStationOneFiles
+~/primestationone/bin/installPrimeStationOneFiles
 
 echo =====================> Building hello_pi example and utility projects
 pushd /opt/vc/src/hello_pi

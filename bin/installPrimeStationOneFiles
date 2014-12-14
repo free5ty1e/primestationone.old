@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~
+cd ~/primestationone
 sudo chmod +x bin/*
 sudo cp bin/* /usr/bin/
 sudo cp -r etc /

@@ -7,10 +7,10 @@ PrimeStation One: A Set of Scripts and Tools For a Ready-To-Go RetroPie with PS3
 Basic Usage:
     Install RetroPie (https://github.com/petrockblog/RetroPie-Setup) either via writing an SD card image downloaded from their site or building from sources (recommended, but this takes 24-36 hours!).  Once you can type "emulationstation" from the command line and get into the basic EmulationStation interface and see one or two entries, you can continue with the PrimeStation One overlay scripts.
 
-    Set up an SSH key on your remote computer / laptop that you will be using to interface with the Pi, so that you can ssh and scp into the Pi without typing a password every time.
+    Clone the github repo for the primeStationOne to your Pi's home folder:
+        cd ~
+        git clone https://github.com/free5ty1e/primestationone.git
 
-    Enter the PrimeStationOne folder you cloned from GitHub, and type:
-        ./primeStationOneCopyFilesToPi 192.168.1.134
 
     Once this finishes copying files to your Pi, SSH into the Pi:
         ssh pi@192.168.1.134
