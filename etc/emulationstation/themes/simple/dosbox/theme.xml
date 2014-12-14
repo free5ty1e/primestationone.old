@@ -5,11 +5,11 @@
 	<view name="system">
 
 		<image name="background" extra="true">
-			<path>./art/pc2_art_blur.png</path>
+			<path>./art/dosbox_art_blur.png</path>
 		</image>
 
 		<image name="logo">
-			<path>./art/ibmpc.svg</path>
+			<path>./art/dosbox.svg</path>
         </image>
 		
 		<helpsystem name="help">
