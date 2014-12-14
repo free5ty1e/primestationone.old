@@ -2,7 +2,6 @@
 
 cowsay -f unipony-smaller Installing onReboot PrimeStation One auto quickupdater cronjob...
 PAGE_UPDATER_COMMAND="quickUpdatePrimestationOneFiles.sh"
-#Timing = 0 0 * * * = every day @ 12:00am midnight
 CRONTAB_TIMING_HEADER="@reboot"
 crontab -l | grep -q "$PAGE_UPDATER_COMMAND" && echo 'crontab entry exists, skipping...' || (crontab -l 2>/dev/null; echo "$CRONTAB_TIMING_HEADER $PAGE_UPDATER_COMMAND") | crontab -
 
