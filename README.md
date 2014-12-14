@@ -14,6 +14,8 @@ Clone the github repo for the primeStationOne to your Pi home folder and start t
 ```
         cd ~
         git clone https://github.com/free5ty1e/primestationone.git
+        git pull
+        cd primestationone
         bin/primeStationOneSetup
 ```
     
