@@ -9,4 +9,5 @@ sudo cp -vr opt /
 cp -vr RetroPie/* ~/RetroPie/
 cp -vr .emulationstation/* ~/.emulationstation/
 cp -v .bashrc ~/
+cp -v splashscreen.png ~/RetroPie-Setup/supplementary/splashscreens/retropieproject2014/splashscreen.png
 cd ~
