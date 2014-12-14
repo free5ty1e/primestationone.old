@@ -1,7 +1,6 @@
-primestationone
+# PrimeStation One
 ===============
-
-# PrimeStation One: A Set of Scripts and Tools For a Ready-To-Go RetroPie with PS3 controls set up and wifi and bluetooth and PS3 bluetooth
+## A Set of Scripts and Tools For a Ready-To-Go RetroPie with PS3 controls set up and wifi and bluetooth and PS3 bluetooth
 
 ### PS3 Controller Layout / Quick Reference: 
 ![SplashScreen](splashscreen.png)
@@ -32,8 +31,10 @@ So far mainly tested with the RetroPie image v2.3 downloaded from their site and
 * Add the `opt/vc/src/hello_pi/*` demos to the Settings / Tools menu, or even a new Demos menu as these are neat to show off and why not?
 * Quick reference image / controller layout / emulator notes for special emulators such as FastDosBox and RPix86 and the C64 emulator that shows via launchs script for X seconds before / while the actual emulator is loading up, so the user knows what might be useful to try on a controller from a couch...
 * Menu system to handle running services, both for the current session and for all future sessions (services enabled / disabled upon startup).  The PrimeStation One can do a lot, and sometimes its nice to turn some unused features off!
-
+* Update graphics for logos and theme backdrops for each menu item
 
 Comments / suggestions / contributions to the code welcome!  
 
-Twitter: @ChrisPaiano
+Credits: 
+Chris "Prime" Paiano (Founder, Lead Developer) - Twitter: @ChrisPaiano
+"Circuit Static" (User Experience, Quality, Development & Marketing) - Twitter: @CircuitStatic
