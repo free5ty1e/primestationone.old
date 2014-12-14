@@ -1,0 +1,97 @@
+#!/bin/bash
+
+function pause()
+{
+    read -p "$*"
+}
+
+echo PrimeStationOne Setup script - to be run on the PI after copying the PrimeStationOne files on top of a functional RetroPie image.
+echo Run the primeStationOneCopyFilesToPi script first from the installing computer after setting up an SSH key for passwordless SCP transfers...
+
+echo =====================> Making sure things are up to date...
+sudo apt-get -y update
+sudo apt-get -y check
+sudo apt-get -y upgrade
+
+echo =====================> Updating Pi firmware!  If this happens, you probably have to reboot...
+sudo rpi-update
+
+echo =====================> Obtaining all packages / dependencies in required order to ensure things build correctly, stage 1 of 3...
+sudo apt-get install -y libudev-dev libasound2-dev libdbus-1-dev libraspberrypi0 libraspberrypi-bin libraspberrypi-dev
+
+echo =====================> Obtaining all packages / dependencies in required order to ensure things build correctly, stage 2 of 3...
+sudo apt-get install -y libboost-system-dev libboost-filesystem-dev libboost-date-time-dev libfreeimage-dev libfreetype6-dev libeigen3-dev libcurl4-openssl-dev libasound2-dev cmake g++-4.7 libboost-locale-dev
+
+echo =====================> Obtaining all packages / dependencies in required order to ensure things build correctly, stage 3 of 3...
+sudo apt-get install -y build-essential automake git dialog libtool bison flex xutils-dev libcairo2-dev libffi-dev libmtdev-dev libjpeg-dev libudev-dev libxcb-xfixes0-dev libxcursor-dev libraspberrypi-dev libxkbcommon-dev libxcb-composite0-dev libpam-dev libbluetooth3 bluez bluez-utils bluez-compat bluez-hcidump bluetooth udev  python-qt4-dev pyqt4-dev-tools qt4-designer libjack-dev wicd-curses libusb-dev libbluetooth-dev joystick speedometer nload vim transmission php5 libapache2-mod-php5 zenmap chromium-bsu ruby gparted cowsay assaultcube-data chromium ttf-mscorefonts-installer netcat filezilla curl tor lynx checkinstall bc alsa-utils mplayer
+
+echo =====================> Launching mplayer config 4 pi script...
+mplayerConfigForPi
+
+cowsay -f vader Installing PrimeStationOne...
+
+echo =====================> Beginning install process of custom stuffs and installation of scripts and executables to their correct locations
+~/bin/installPrimeStationOneFiles
+
+echo =====================> Building hello_pi example and utility projects
+pushd /opt/vc/src/hello_pi
+sudo ./rebuild.sh
+popd
+
+#checkinstall -y libusb-dev libbluetooth-dev joystick
+
+#cowsay Installing PS3 Pairing
+#echo =====================> Installing sixpair to /usr/bin
+#wget http://www.pabr.org/sixlinux/sixpair.c
+#gcc -o sixpair sixpair.c -lusb
+#sudo cp ./sixpair /usr/bin
+#cowsay -f calvin Connect your PS3 controller to the Pi with a USB cable, and then press Enter to continue...
+#pause 'Please ensure your PS3 controller is connected to the Pi with a USB cable, then press Enter to continue...'
+#sudo sixpair
+
+cowsay Installing PS3 Bluetooth Daemon...
+echo =====================> Installing Sixad PS3 sixaxis controller bluetooth pairing daemon
+tar xfvz QtSixA-1.5.1.tar.gz
+#wget http://sourceforge.net/projects/qtsixa/files/QtSixA%201.5.1/QtSixA-1.5.1-src.tar.gz
+#tar xfvz QtSixA-1.5.1-src.tar.gz
+cd QtSixA-1.5.1/sixad
+##wget https://bugs.launchpad.net/qtsixa/+bug/1036744/+attachment/3260906/+files/compilation_sid.patch
+##patch -Np1 -i compilation_sid.patch
+#patch -Np1 -i ../sixad.pi.patch
+sudo make
+sudo make install
+sudo mkdir -p /var/lib/sixad/profiles
+#sudo checkinstall -y
+#cowsay -f calvin Disconnect your PS3 controller from the Pi USB cable, then press the center PS button, then Enter...
+#pause 'Please ensure that PS3 controller is now disconnected from the USB, then press the center PS button, then press Enter to continue...'
+#sudo sixad --start
+sudo update-rc.d sixad defaults
+cd ~
+
+cowsay Installing mySQL stuffs...
+echo =====================> Installing mySQL server and client, which may prompt for passwords.  I recommend you set the passwords match the Pi user password, which is raspberry
+sudo apt-get install -y mysql-server mysql-client
+
+cowsay -f vader Installing LAMP server and Webmin...
+sudo groupadd -f -g33 www-data
+sudo apt-get -y update
+sudo apt-get -y install apache2 php5 libapache2-mod-php5
+sudo apt-get -y install mysql-server mysql-client php5-mysql
+sudo apt-get -y install phpmyadmin
+sudo apt-get -y install perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python libapt-pkg-perl
+wget http://downloads.sourceforge.net/project/webadmin/webmin/1.720/webmin_1.720_all.deb
+sudo dpkg --install webmin_1.720_all.deb
+
+
+cowsay Installing RetroPie-Setup...
+echo =====================> Now getting the latest RetroPie-Setup script.
+git clone --depth=0 git://github.com/petrockblog/RetroPie-Setup.git
+cd RetroPie-Setup
+git pull
+chmod +x retropie_packages.sh
+chmod +x retropie_setup.sh
+sudo ~/RetroPie-Setup/retropie_setup.sh
+
+
+
+
