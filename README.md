@@ -28,6 +28,10 @@ So far mainly tested with the RetroPie image v2.3 downloaded from their site and
 
 
 FUTURE:
+
+    Quick reference image / controller layout / emulator notes for special emulators such as FastDosBox and RPix86 and the C64 emulator that shows via launchs script for X seconds before / while the actual emulator is loading up, so the user knows what might be useful to try on a controller from a couch...
+    
+
     Menu system to handle running services, both for the current session and for all future sessions (services enabled / disabled upon startup).  The PrimeStation One can do a lot, and sometimes its nice to turn some unused features off!
 
 
