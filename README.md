@@ -25,6 +25,8 @@ So far mainly tested with the RetroPie image v2.3 downloaded from their site and
 
 FUTURE:
 
+    Add the opt/vc/src/hello_pi/* demos to the Settings / Tools menu, or even a new Demos menu as these are neat to show off and why not?
+
     Quick reference image / controller layout / emulator notes for special emulators such as FastDosBox and RPix86 and the C64 emulator that shows via launchs script for X seconds before / while the actual emulator is loading up, so the user knows what might be useful to try on a controller from a couch...
     
 
