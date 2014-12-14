@@ -10,10 +10,6 @@ Basic Usage:
     Clone the github repo for the primeStationOne to your Pi's home folder:
         cd ~
         git clone https://github.com/free5ty1e/primestationone.git
-
-
-    Once this finishes copying files to your Pi, SSH into the Pi:
-        ssh pi@192.168.1.134
     
     In the Pi, type the following to initiate the installation of all the goodness:
         bin/primeStationOneSetup
