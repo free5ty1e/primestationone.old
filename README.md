@@ -22,7 +22,7 @@ Once this script completes, you should end up in the `RetroPie-Setup/retropie_se
     
 At this point, there is a menu entry in the EmulationStation Settings menu page (script page) to `update_primestation_one.sh`, which you can also type in a command terminal.  It will perform a git pull to retrieve the latest verison of the setup script and supporting files, and run the bin/primeStationOneSetup again to ensure the latest things are thinged for your maximum thingness.
     
-The `~/splashscreen.png` file can also be shown by typing `display_splashscreen_quick_reference.sh`, or selecting this script from the Settings page in Emulationstation.  This also shows the layout of the PS3 controller for the auxiliary and management functions of RetroArch for most emulators (those with libretocores, of course).
+The `~/splashscreen.png` file can also be shown by typing `splashscreenQuickReference.sh`, or selecting this script from the Settings page in Emulationstation.  This also shows the layout of the PS3 controller for the auxiliary and management functions of RetroArch for most emulators (those with libretocores, of course).
     
 So far mainly tested with the RetroPie image v2.3 downloaded from their site and written to SD card using a dd command.  Not sure if the very latest RetroPie built from sources will work correctly with these files, but we plan to test it soon!
 
