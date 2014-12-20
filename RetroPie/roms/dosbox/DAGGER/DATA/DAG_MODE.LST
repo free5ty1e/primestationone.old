@@ -1,0 +1,70 @@
+~arena2\books
+~arena2\maps
+~save0
+~save1
+~save2
+~save3
+~save4
+~save5
+
+!packed.dat
+!sky00.dat
+!sky01.dat
+!sky02.dat
+!sky03.dat
+!sky04.dat
+!sky05.dat
+!sky06.dat
+!sky07.dat
+!sky08.dat
+!sky09.dat
+!sky10.dat
+!sky11.dat
+!sky12.dat
+!sky13.dat
+!sky14.dat
+!sky15.dat
+!sky16.dat
+!sky17.dat
+!sky18.dat
+!sky19.dat
+!sky20.dat
+!sky21.dat
+!sky22.dat
+!sky23.dat
+!sky24.dat
+!sky25.dat
+!sky26.dat
+!sky27.dat
+!sky28.dat
+!sky29.dat
+!sky30.dat
+!sky31.dat
+!anim0000.vid
+!anim0001.vid
+!anim0002.vid
+!anim0003.vid
+!anim0004.vid
+!anim0005.vid
+!anim0006.vid
+!anim0007.vid
+!anim0008.vid
+!anim0009.vid
+!anim0010.vid
+!anim0011.vid
+!anim0012.vid
+!anim0013.vid
+!anim0014.vid
+!anim0015.vid
+!dag2.vid
+
+install.exe			.\
+install.scr			.\
+install.pif			.\
+data\*.*			.\data\
+dagger\*.*			.\
+#dagger\arena2\packed.dat	arena2\dagger.snd	arena2\
+#dagger\arena2\packed.dat	arena2\arch3d.bsa	arena2\
+dagger\arena2\*.*		.\arena2\
+dagger\arena2\maps\*.*		.\arena2\maps\
+dagger\arena2\books\*.*		.\arena2\books\
