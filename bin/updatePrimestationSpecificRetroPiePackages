@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cowsay -f mech-and-cow Updating RetroPie packages specific to the PrimeStation One...
+cowsay -f elephant Updating the LinApple Apple 2 emulator...
+sudo ~/RetroPie-Setup/retropie_packages.sh linapple
+cowsay -f elephant-in-snake Removing and reinstalling SDL 2...
+sudo ~/RetroPie-Setup/retropie_packages.sh sdl remove
+sudo ~/RetroPie-Setup/retropie_packages.sh sdl
+
+
