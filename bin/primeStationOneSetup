@@ -55,6 +55,8 @@ popd
 #pause 'Please ensure your PS3 controller is connected to the Pi with a USB cable, then press Enter to continue...'
 #sudo sixpair
 
+installLinuxJoystickMapper.sh
+
 cowsay Installing PS3 Bluetooth Daemon...
 echo =====================> Installing Sixad PS3 sixaxis controller bluetooth pairing daemon
 tar xfvz QtSixA-1.5.1.tar.gz
