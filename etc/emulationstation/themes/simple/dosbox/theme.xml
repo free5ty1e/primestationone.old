@@ -9,7 +9,7 @@
 		</image>
 
 		<image name="logo">
-			<path>./art/dosbox.svg</path>
+			<path>./art/dosbox.png</path>
         </image>
 		
 		<helpsystem name="help">
