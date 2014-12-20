@@ -114,8 +114,9 @@ UPTIME=$(printf "%d days, %02dh%02dm%02ds" "$days" "$hours" "$mins" "$secs")
 # get the load averages
 read one five fifteen rest < /proc/loadavg
 
-ROMSLOCATION=/media/usb/RetroPie/roms
-#ROMSLOCATION=~/RetroPie/roms
+#Link linkedroms to actual location of roms (USB? SD?)
+ln -s /media/usb/RetroPie/roms/ ~/linkedroms
+#ln -s ~/RetroPie/roms/ ~/linkedroms
 
 cowsay -f beavis.zen PrimeStation One v0.8a Go!
 
