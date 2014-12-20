@@ -2,8 +2,8 @@
 
 if [ $# -eq 0 ];
 then
-echo "No arguments supplied, will use default frequency of 700MHz"
-speedToClockPi=700
+echo "No arguments supplied, will use default frequency of 300MHz"
+speedToClockPi=300
 else
 echo "Using supplied speed of $1MHz for our processor"
 speedToClockPi=$1
