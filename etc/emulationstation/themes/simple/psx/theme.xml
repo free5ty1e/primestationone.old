@@ -9,7 +9,7 @@
 		</image>
 
 		<image name="logo">
-			<path>./art/psx.png</path>
+			<path>./art/psx.svg</path>
         </image>
 		
 		<helpsystem name="help">
