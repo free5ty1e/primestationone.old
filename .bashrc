@@ -118,7 +118,7 @@ read one five fifteen rest < /proc/loadavg
 ln -s /media/usb/RetroPie/roms/ ~/linkedroms
 #ln -s ~/RetroPie/roms/ ~/linkedroms
 
-cowsay -f beavis.zen PrimeStation One v0.8a Go!
+cowsay -f beavis.zen PrimeStation One v0.9 Go!
 
 echo "$(tput setaf 2)
    .~~.   .~~.    `date +"%A, %e %B %Y, %r"`
