@@ -1,25 +1,17 @@
 #!/bin/bash
 
 #Link linkedroms to actual location of roms (USB? SD?)
-MAIN_ROMS_LOCATION="/media/usb/RetroPie/roms"
-ROMS_SYMLINK_LOCATION="~/linkedroms"
-if [ -d "$MAIN_ROMS_LOCATION" ]; then
-    if [ -L "$MAIN_ROMS_LOCATION" ]; then
-        # It is a symlink!
-        # Symbolic link specific commands go here.
-
-
-    else
-        # It's a directory!
-        # Directory command goes here.
-
-    fi
+MAIN_ROMS_USB_LOCATION="/media/usb/RetroPie/roms"
+MAIN_ROMS_SD_LOCATION="~/RetroPie/roms"
+if [ -d "$MAIN_ROMS_USB_LOCATION" ]; then
+    MAIN_ROMS_LINKED_LOCATION="$MAIN_ROMS_USB_LOCATION"
 else
-    # Does not exist!
-    ln -s $MAIN_ROMS_LOCATION $ROMS_SYMLINK_LOCATION
-
+    MAIN_ROMS_LINKED_LOCATION="$MAIN_ROMS_SD_LOCATION"
 fi
-
-#ln -s ~/RetroPie/roms/ ~/linkedroms
-
-
+ROMS_SYMLINK_LOCATION="~/linkedroms"
+if [ ! -e "$ROMS_SYMLINK_LOCATION" ] || [ -d "$ROMS_SYMLINK_LOCATION" ] ; then
+#if the symlink is broken or if it does not exist, then remove and recreate it with the current roms location
+    echo "$ROMS_SYMLINK_LOCATION is a broken symlink!  Recreating with $MAIN_ROMS_LINKED_LOCATION"
+    rm -f "$ROMS_SYMLINK_LOCATION"
+    ln -s "$MAIN_ROMS_LINKED_LOCATION" "$ROMS_SYMLINK_LOCATION"
+fi
