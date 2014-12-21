@@ -105,6 +105,8 @@ fi
 
 setupRomsSymlink.sh
 
+showPrimestationOneVersion.sh
+
 # RETROPIE PROFILE START
 # Thanks to http://blog.petrockblock.com/forums/topic/retropie-mushroom-motd/#post-3965
 

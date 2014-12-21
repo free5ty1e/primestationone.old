@@ -22,5 +22,4 @@ fi
 
 #ln -s ~/RetroPie/roms/ ~/linkedroms
 
-cowsay -f beavis.zen PrimeStation One v0.9 Go!
 
