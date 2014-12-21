@@ -101,6 +101,10 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+
+setupRomsSymlink.sh
+
 # RETROPIE PROFILE START
 # Thanks to http://blog.petrockblock.com/forums/topic/retropie-mushroom-motd/#post-3965
 
@@ -113,12 +117,6 @@ UPTIME=$(printf "%d days, %02dh%02dm%02ds" "$days" "$hours" "$mins" "$secs")
 
 # get the load averages
 read one five fifteen rest < /proc/loadavg
-
-#Link linkedroms to actual location of roms (USB? SD?)
-ln -s /media/usb/RetroPie/roms/ ~/linkedroms
-#ln -s ~/RetroPie/roms/ ~/linkedroms
-
-cowsay -f beavis.zen PrimeStation One v0.9 Go!
 
 echo "$(tput setaf 2)
    .~~.   .~~.    `date +"%A, %e %B %Y, %r"`
