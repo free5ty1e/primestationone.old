@@ -7,7 +7,7 @@
 retro_user="pi"
 retropie_path=/home/${retro_user}/RetroPie
 # not sure if we should default to true/false with create_romdirs, but defaulting to false feels less intrusive. I'd like it to be configurable. A config file is one option, having it statically generated with retropie_setup.sh upon install is another
-create_romdirs="true"
+create_romdirs="false"
 
 ## internals
 hook_name=${0##*/}
@@ -40,6 +40,6 @@ fi
 [ -d "${UM_MOUNTPOINT}/roms" ] || exit 0
 
 # this could probably need some work, but it should 'work for now', so..
-rsync -azu --max-delete=-1 ${UM_MOUNTPOINT}/roms ${retropie_path}/ >/dev/null 2>&1 || log err "rsync failed to sync ROMS, returned error code $?"
+#rsync -azu --max-delete=-1 ${UM_MOUNTPOINT}/roms ${retropie_path}/ >/dev/null 2>&1 || log err "rsync failed to sync ROMS, returned error code $?"
 chown -R ${retro_user} ${retropie_path}/
 chgrp -R ${retro_user} ${retropie_path}/
