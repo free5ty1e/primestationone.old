@@ -2,7 +2,7 @@
 
 rootdir="/opt/retropie"
 
-source "~/primestationone/lib/helpers.sh"
+source "/home/pi/primestationone/lib/helpers.sh"
 
 mkdir -p "$rootdir/emulators"
 
