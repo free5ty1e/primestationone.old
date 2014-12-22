@@ -9,7 +9,7 @@
 		</image>
 
 		<image name="logo">
-			<path>./art/praspberryPiLogo.png</path>
+			<path>./art/raspberryPiLogo.png</path>
         </image>
 		
 		<helpsystem name="help">
