@@ -10,7 +10,9 @@ sudo -rf "$rootdir/emulators/vice-2.4"
 sudo mkdir "$rootdir/emulators/vice-2.4"
 
 #TODO: Fix so this only happens if the entry does not already exist
-sudo echo 'deb http://ftp.uk.debian.org/debian/ squeeze main contrib' >> /etc/apt/sources.list
+sudo su
+echo 'deb http://ftp.uk.debian.org/debian/ squeeze main contrib' >> /etc/apt/sources.list
+exit
 sudo apt-get update
 sudo apt-get install vice
 
