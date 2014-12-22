@@ -3,11 +3,7 @@
 cowsay -f stegosaurus Updating C64 emulators...
 pushd ~
 sudo ~/RetroPie-Setup/retropie_packages.sh vice remove
-rootdir="/opt/retropie"
 source "/home/pi/primestationone/lib/helpers.sh"
-sudo mkdir -p "$rootdir/emulators"
-sudo rm -rf "$rootdir/emulators/vice-2.4"
-sudo mkdir "$rootdir/emulators/vice-2.4"
 
 sudo apt-get -y install vim libice-dev libreadline-dev libsdl1.2-dev libxt-dev libxmu-dev libxaw7-dev libx11-dev libgtkglext1
 
