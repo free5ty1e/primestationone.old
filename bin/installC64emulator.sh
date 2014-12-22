@@ -9,9 +9,10 @@ mkdir -p "$rootdir/emulators"
 cowsay -f stegosaurus Updating C64 emulators...
 sudo ~/RetroPie-Setup/retropie_packages.sh vice remove
 pushd ~
-wget -O vice-2.4.tar.gz http://downloads.sourceforge.net/project/vice-emu/development-releases/vice-2.4.12.tar.gz?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fvice-emu%2Ffiles%2Fdevelopment-releases%2F&ts=1419209412&use_mirror=superb-dca3
-tar xzvf vice-2.4.tar.gz -C "$rootdir/emulators/"
-rm vice-2.4.tar.gz
+
+#wget -O vice-2.4.tar.gz http://downloads.sourceforge.net/project/vice-emu/development-releases/vice-2.4.12.tar.gz?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fvice-emu%2Ffiles%2Fdevelopment-releases%2F&ts=1419209412&use_mirror=superb-dca3
+cp ~/primestationone/vice-2.4.12.tar.gz ~/vice-2.4.tar.gz
+sudo tar xzvf vice-2.4.tar.gz -C "$rootdir/emulators/"
 
 sudo apt-get -y install vim libice-dev libreadline-dev libsdl1.2-dev libxt-dev libxmu-dev libxaw7-dev libx11-dev
 
