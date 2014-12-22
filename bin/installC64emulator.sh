@@ -9,12 +9,18 @@ sudo mkdir -p "$rootdir/emulators"
 sudo -rf "$rootdir/emulators/vice-2.4"
 sudo mkdir "$rootdir/emulators/vice-2.4"
 
-#TODO: Fix so this only happens if the entry does not already exist
-sudo su
-echo 'deb http://ftp.uk.debian.org/debian/ squeeze main contrib' >> /etc/apt/sources.list
-exit
-sudo apt-get update
-sudo apt-get install vice
+wget http://www.frank-buss.de/raspberrypi/vice_2.3.dfsg-4_armhf.deb
+dpkg -i vice_2.3.dfsg-4_armhf.deb
+wget http://www.zimmers.net/anonftp/pub/cbm/crossplatform/emulators/VICE/old/vice-1.5-roms.tar.gz
+tar -xvzf vice-1.5-roms.tar.gz
+cp -a vice-1.5-roms/data/* /usr/lib/vice/
+
+##TODO: Fix so this only happens if the entry does not already exist
+#sudo su
+#echo 'deb http://ftp.uk.debian.org/debian/ squeeze main contrib' >> /etc/apt/sources.list
+#exit
+#sudo apt-get update
+#sudo apt-get install vice
 
 #sudo sed 's/^avpgw/new text/; t; s/^av/new text/; t; s/^/new text/' file
 #sudo sed '/deb http://ftp.uk.debian.org/debian/ squeeze main/c Linux Sysadmin - Scripting' /etc/apt/sources.list
