@@ -10,11 +10,12 @@ sudo -rf "$rootdir/emulators/vice-2.4"
 sudo mkdir "$rootdir/emulators/vice-2.4"
 
 #TODO: Fix so this only happens if the entry does not already exist
-echo 'deb http://ftp.uk.debian.org/debian/ squeeze main contrib' >> /etc/apt/sources.list
-#sudo sed 's/^avpgw/new text/; t; s/^av/new text/; t; s/^/new text/' file
-#sudo sed '/deb http://ftp.uk.debian.org/debian/ squeeze main/c Linux Sysadmin - Scripting' /etc/apt/sources.list
+sudo echo 'deb http://ftp.uk.debian.org/debian/ squeeze main contrib' >> /etc/apt/sources.list
 sudo apt-get update
 sudo apt-get install vice
+
+#sudo sed 's/^avpgw/new text/; t; s/^av/new text/; t; s/^/new text/' file
+#sudo sed '/deb http://ftp.uk.debian.org/debian/ squeeze main/c Linux Sysadmin - Scripting' /etc/apt/sources.list
 
 #cp ~/primestationone/vice-2.4.12.tar.gz ~/vice-2.4.tar.gz
 #tar xzvf ~/vice-2.4.tar.gz -C ~/
