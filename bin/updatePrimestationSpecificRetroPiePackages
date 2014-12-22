@@ -32,7 +32,8 @@ sudo ~/RetroPie-Setup/retropie_packages.sh jzintv
 cowsay -f stegosaurus Updating Minecraft...
 sudo ~/RetroPie-Setup/retropie_packages.sh minecraft
 
-installC64emulator.sh
+#Currently breaks C64 emulator and doesn't build the replacement one yet
+#installC64emulator.sh
 
 cowsay -f stegosaurus Updating RetroArch...
 sudo ~/RetroPie-Setup/retropie_packages.sh retroarch
