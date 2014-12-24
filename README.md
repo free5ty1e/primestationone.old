@@ -7,7 +7,11 @@
 https://github.com/free5ty1e/primestationone/blob/master/splashscreen.png 
 
 ## BASIC USAGE
-Install RetroPie (https://github.com/petrockblog/RetroPie-Setup) either via writing an SD card image downloaded from their site or building from sources (recommended, but this takes 24-36 hours!).  Once you can type 'emulationstation' from the command line and get into the basic EmulationStation interface and see one or two entries, you can continue with the PrimeStation One overlay scripts.
+Install RetroPie (https://github.com/petrockblog/RetroPie-Setup) by writing the SD card image v2.3 downloaded from their site (http://blog.petrockblock.com/retropie/retropie-downloads/).  
+
+OR: You can download an actual ready-to-go PrimeStationOne image from our VerilyShare at (https://mega.co.nz/#F!lIdDDCAa!oTRSQWOrvI9sX33zD4pr8g).  The first alpha release should be available in time for Christmas 2014!
+
+Once you can type 'emulationstation' from the command line and get into the basic EmulationStation interface and see one or two entries, you can continue with the PrimeStation One overlay scripts.
 
 Clone the github repo for the primeStationOne to your Pi home folder and start the setup. (git pull is included in case you want to copy / paste the entire block below and paste into an SSH terminal window, to update if you've already cloned)
 ```
@@ -40,3 +44,7 @@ Comments / suggestions / contributions to the code welcome!
 Credits: 
 Chris "Prime" Paiano (Founder, Lead Developer) - Twitter: @ChrisPaiano
 "Circuit Static" (User Experience, Quality, Development & Marketing) - Twitter: @CircuitStatic
+
+RetroPie project (https://github.com/petrockblog/RetroPie-Setup)
+XRDP project (https://github.com/kx499/xrdp)
+QtSixA project (http://qtsixa.sourceforge.net/)
