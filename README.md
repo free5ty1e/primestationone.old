@@ -42,9 +42,10 @@ So far mainly tested with the RetroPie image v2.3 downloaded from their site and
 Comments / suggestions / contributions to the code welcome!  
 
 Credits: 
-Chris "Prime" Paiano (Founder, Lead Developer) - Twitter: @ChrisPaiano
-"Circuit Static" (User Experience, Quality, Development & Marketing) - Twitter: @CircuitStatic
+* Chris "Prime" Paiano (Founder, Lead Developer) - Twitter: @ChrisPaiano
+* "Circuit Static" (User Experience, Quality, Development & Marketing) - Twitter: @CircuitStatic
 
-RetroPie project (https://github.com/petrockblog/RetroPie-Setup)
-XRDP project (https://github.com/kx499/xrdp)
-QtSixA project (http://qtsixa.sourceforge.net/)
+Standing on the Shoulders of Giants:
+* RetroPie project (https://github.com/petrockblog/RetroPie-Setup)
+* XRDP project (https://github.com/kx499/xrdp)
+* QtSixA project (http://qtsixa.sourceforge.net/)
