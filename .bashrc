@@ -102,8 +102,8 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-
-setupRomsSymlink.sh
+#Disabling below until it works properly (this one recreates symlink every time someone logs in, no matter if its good or not)
+#setupRomsSymlink.sh
 
 showPrimestationOneVersion.sh
 
