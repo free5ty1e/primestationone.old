@@ -1,5 +1,7 @@
 # PrimeStation One
 ## A Set of Scripts and Tools For a "Ready-To-Go" RetroPie (for Raspberry Pi, model B+ recommended) with PS3 controls ready and configured to work with Bluetooth or USB on multiple games and game system emulations.
+
+#### Please Note: The PrimeStation One's main driving force is to do ALL THE THINGS!
 =============
 
 ### PS3 Controller Layout / Quick Reference: 
