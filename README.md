@@ -9,9 +9,22 @@
 https://github.com/free5ty1e/primestationone/blob/master/splashscreen.png 
 
 ## BASIC USAGE
-Install RetroPie (https://github.com/petrockblog/RetroPie-Setup) by writing the SD card image v2.3 downloaded from their site (http://blog.petrockblock.com/retropie/retropie-downloads/).  
+You can download an actual ready-to-go PrimeStationOne image from our VerilyShare at (https://mega.co.nz/#F!lIdDDCAa!oTRSQWOrvI9sX33zD4pr8g).  The first alpha release should be available in time for Christmas 2014! If you have managed to obtain one of these releases, extract the .7z archive so you have the .img file.  Here are the commands to write the image file on Mac and Linux with a progress bar as well.  The v0.91 alpha release archive is used for this example, adjust accordingly if you have a different version.  We apologize, but as of this time the PrimeStation One is being developed on a 16GB SD card and so that is going to be the minimum size SD card you will need to utilize this image sensibly:
 
-OR: You can download an actual ready-to-go PrimeStationOne image from our VerilyShare at (https://mega.co.nz/#F!lIdDDCAa!oTRSQWOrvI9sX33zD4pr8g).  The first alpha release should be available in time for Christmas 2014!
+Install on Mac: (`brew install pv` if you don't have pv.  If you don't have Homebrew, too bad for you.)   Replace the device `/dev/disk1` with your SD card.
+```
+        pv --size 16000000000 primeStationOne16gV0.91alpha.img | sudo dd bs=2m of=/dev/disk1
+```
+
+Install on Linux:  Replace the device `/dev/sdb` with your SD card.
+```
+        sudo dd bs=2M if=primeStationOne16gV0.6a.img of=/dev/sdb
+```
+
+
+
+#### CONTINUE IF YOU WANT TO START FROM A FRESH RETROPIE IMAGE INSTEAD (can use 8GB SD card):
+Install RetroPie (https://github.com/petrockblog/RetroPie-Setup) by writing the SD card image v2.3 downloaded from their site (http://blog.petrockblock.com/retropie/retropie-downloads/).  
 
 Once you can type 'emulationstation' from the command line and get into the basic EmulationStation interface and see one or two entries, you can continue with the PrimeStation One overlay scripts.
 
