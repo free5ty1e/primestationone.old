@@ -9,7 +9,7 @@
 		</image>
 
 		<image name="logo">
-			<path>./art/ibmpc.svg</path>
+			<path>./art/x86icon</path>
         </image>
 		
 		<helpsystem name="help">
