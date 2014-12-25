@@ -60,6 +60,7 @@ So far mainly tested with the RetroPie image v2.3 downloaded from their site and
 * Menu system to handle running services, both for the current session and for all future sessions (services enabled / disabled upon startup).  The PrimeStation One can do a lot, and sometimes its nice to turn some unused features off!
 * Resolve issue with using higher resolutions while still maintaining the ability to exit FastDosBox and Vice and similar emulators without requiring a hard reboot (for now, everything is running in 640x480 mode to alleviate this issue)
 * Resolve issue where sometimes exiting EmulationStation will leave the user with a blank black screen; currently have to press ALT + Right Arrow then ALT + Left Arrow to change terminals away and back and reinitialize the display sometimes.
+* Add START + SELECT to request a soft reboot of the Pi for panic / crash situations.  This might just end up pressing CTRL-ALT-DEL if we continue to find this actually does work like we think it does...
 
 Comments / suggestions / contributions to the code welcome!  
 
