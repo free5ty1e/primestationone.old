@@ -9,7 +9,7 @@
 https://github.com/free5ty1e/primestationone/blob/master/splashscreen.png 
 
 ## BASIC USAGE
-You can download an actual ready-to-go PrimeStationOne image from our VerilyShare at (http://goo.gl/5rzgcj).  
+You can download an actual ready-to-go PrimeStationOne image from our VerilyShare at (http://goo.gl/5rzgcj).  Download count from this link since 20141224 @ 7pm PST can be found at the following analytics link: (http://goo.gl/#analytics/goo.gl/5rzgcj/all_time) 
 
 The first alpha release should be available in time for Christmas 2014! 
 
