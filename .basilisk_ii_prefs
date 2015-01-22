@@ -9,7 +9,7 @@ bootdriver 0
 ramsize 33554432
 frameskip 2
 modelid 14
-cpu 3
+cpu 4
 fpu true
 nocdrom false
 nosound false
