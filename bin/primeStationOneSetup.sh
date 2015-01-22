@@ -11,6 +11,7 @@ echo Run the primeStationOneCopyFilesToPi script first from the installing compu
 echo =====================> Making sure things are up to date...
 sudo apt-get -y update
 sudo apt-get -y check
+sudo apt-get -y dist-upgrade
 sudo apt-get -y upgrade
 
 echo =====================> Updating Pi firmware!  If this happens, you probably have to reboot...
