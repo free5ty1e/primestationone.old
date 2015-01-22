@@ -10,5 +10,6 @@ cd ~/macemu/BasiliskII/src/Unix
 #sudo aclocal ; autoconf
 #sudo autoreconf -I ./m4
 #sudo ./configure --enable-sdl-video --enable-sdl-audio --disable-vosf --disable-jit-compiler --without-gtk
-sudo ./configure --enable-sdl-video --enable-sdl-audio --disable-vosf --disable-jit-compiler
+#sudo ./configure --enable-sdl-video --enable-sdl-audio --disable-vosf --disable-jit-compiler
+sudo ./autogen.sh --enable-sdl-video --enable-sdl-audio --disable-vosf --disable-jit-compiler
 sudo make install
