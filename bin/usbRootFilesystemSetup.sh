@@ -10,7 +10,7 @@ sudo umount /dev/sda1
 
 echo Now we need to remove all partitions on the USB drive.
 echo List partitions by typing p ENTER
-echo Then press d <partition number> ENTER until no partitions remain such as:
+echo Then delete all partitions in reverse order as necessary, full delete commands are:
 echo d 4 ENTER d 3 ENTER d 2 ENTER d ENTER
 echo Then press n p ENTER ENTER ENTER w ENTER to write changes...
 sudo fdisk /dev/sda1
