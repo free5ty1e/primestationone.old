@@ -32,7 +32,7 @@ sudo apt-get install -y pv
 
 echo Now actually transferring entire root filesystem to USB drive so we can boot from it...using pv with estimate of 4GB to transfer, so do not be alarmed if the progress does not reach 100 percent...
 #sudo dd if=/dev/root of=/dev/sda1 bs=4M
-pv --size 4000000000 /dev/root | sudo dd bs=4M of=/dev/sda1
+sudo pv --size 4000000000 /dev/root | sudo dd bs=4M of=/dev/sda1
 
 #echo Now expanding filesystem to fill USB drive capacity...
 #sudo resize2fs -p /dev/sda1
