@@ -30,6 +30,7 @@ df -h
 echo Installing package progressview pv so we can see something happening during the next big operation...
 sudo apt-get install -y pv
 
+cowsay -f tux Transferring entire root filesystem from SD to USB!!
 echo Now actually transferring entire root filesystem to USB drive so we can boot from it...using pv with estimate of 4GB to transfer, so do not be alarmed if the progress does not reach 100 percent...
 #sudo dd if=/dev/root of=/dev/sda1 bs=4M
 sudo pv --size 4000000000 /dev/root | sudo dd bs=4M of=/dev/sda1
