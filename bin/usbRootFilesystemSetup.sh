@@ -1,5 +1,6 @@
 #!/bin/bash
 cowsay -f eyes Configuring first USB stick to be our new root filesystem!  Using /dev/sda1...
+ls /dev/sd*
 df -h
 ls /media/usb0
 
