@@ -36,9 +36,9 @@ echo Now actually transferring entire root filesystem to USB drive so we can boo
 #sudo dd if=/dev/root of=/dev/sda1 bs=4M
 sudo pv --size 4000000000 /dev/root | sudo dd bs=4M of=/dev/sda1
 
-#echo Now expanding filesystem to fill USB drive capacity...
-#sudo resize2fs -p /dev/sda1
-#df -h
+echo Now expanding filesystem to fill USB drive capacity...
+sudo resize2fs -p /dev/sda1
+df -h
 
 echo Now replacing fstab and boot cmdline with versions that mount the USB as the root filesystem instead of the 2nd partition of the SD card, which we should be able to safely remove after this is complete...
 sudo cp -v ~/primestationone/reference/fstabForUsb /media/usb0/etc/fstab
