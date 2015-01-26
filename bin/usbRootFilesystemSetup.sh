@@ -28,6 +28,10 @@ sudo mount /dev/sda1 /media/usb0
 echo Checking new storage volumes...
 df -h
 
+echo Now replacing fstab and boot cmdline with versions that mount the USB as the root filesystem instead of the 2nd partition of the SD card, which we should be able to safely remove after this is complete...
+sudo cp -v ~/primestationone/reference/fstabForUsb /etc/fstab
+sudo cp -v ~/primestationone/reference/cmdlineForUsb.txt /boot/cmdline.txt
+
 echo Installing package progressview pv so we can see something happening during the next big operation...
 sudo apt-get install -y pv
 
@@ -40,9 +44,6 @@ echo Now expanding filesystem to fill USB drive capacity...
 sudo resize2fs -p /dev/sda1
 df -h
 
-echo Now replacing fstab and boot cmdline with versions that mount the USB as the root filesystem instead of the 2nd partition of the SD card, which we should be able to safely remove after this is complete...
-sudo cp -v ~/primestationone/reference/fstabForUsb /media/usb0/etc/fstab
-sudo cp -v ~/primestationone/reference/cmdlineForUsb.txt /boot/cmdline.txt
 
 read -p "Press any key to continue rebooting... " -n1 -s
 restart
