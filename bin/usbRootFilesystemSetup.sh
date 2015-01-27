@@ -40,5 +40,7 @@ echo Now actually transferring entire root filesystem to USB drive so we can boo
 #sudo dd if=/dev/root of=/dev/sda1 bs=4M
 sudo pv --size 4000000000 /dev/root | sudo dd bs=4M of=/dev/sda1
 
+usbSda1ExpandFilesystem.sh
+
 read -p "Press any key to continue rebooting... " -n1 -s
 restart
