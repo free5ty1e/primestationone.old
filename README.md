@@ -3,7 +3,7 @@
 
 
 #NOTE: This is the OLD PrimeStationOne repository!  It was recreated from scratch for a couple reasons, the largest of which was the creeping size of the repo since some binaries and images were a part of it.  Please point your bookmarks / stars to the NEW PrimeStationOne repository, located here:
-https://github.com/free5ty1e/primestationone
+# https://github.com/free5ty1e/primestationone
 
 
 ------------------------------------------------------------------------------------------------------------------------------
