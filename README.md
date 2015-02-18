@@ -1,6 +1,13 @@
 # PrimeStation One
 ## A Set of Scripts and Tools For a "Ready-To-Go" RetroPie (for Raspberry Pi, model B+ recommended) with PS3 controls ready and configured to work with Bluetooth or USB on multiple games and game system emulations.
 
+
+#NOTE: This is the OLD PrimeStationOne repository!  It was recreated from scratch for a couple reasons, the largest of which was the creeping size of the repo since some binaries and images were a part of it.  Please point your bookmarks / stars to the NEW PrimeStationOne repository, located here:
+https://github.com/free5ty1e/primestationone
+
+
+------------------------------------------------------------------------------------------------------------------------------
+
 #### Please Note: The PrimeStation One's main driving force is to do ALL THE THINGS!
 =============
 
